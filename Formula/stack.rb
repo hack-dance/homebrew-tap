@@ -5,23 +5,23 @@
 class Stack < Formula
   desc "Stacked PR CLI for GitHub built with Go and Charm"
   homepage "https://github.com/hack-dance/stack"
-  version "0.1.1"
+  version "0.1.2"
 
   depends_on "gh"
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hack-dance/stack/releases/download/v0.1.1/stack_0.1.1_darwin_amd64.tar.gz"
-      sha256 "fcfd498cc3fd99a4dd0e0536b247ccd147034edb9ab418438ddbd06d605542ff"
+      url "https://github.com/hack-dance/stack/releases/download/v0.1.2/stack_0.1.2_darwin_amd64.tar.gz"
+      sha256 "e6ecc22b88f79739e1956273c5be06002ce79e517468d5d835c7866e6127c412"
 
       define_method(:install) do
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hack-dance/stack/releases/download/v0.1.1/stack_0.1.1_darwin_arm64.tar.gz"
-      sha256 "7850bb86e4d8d67493cacb9e915b517491bae6933ea57068573815b04f7950d3"
+      url "https://github.com/hack-dance/stack/releases/download/v0.1.2/stack_0.1.2_darwin_arm64.tar.gz"
+      sha256 "7ede4df02ca53e7fe84b614eaadafcce05ca513fa3ce69009b69ce196764ed67"
 
       define_method(:install) do
         bin.install "stack"
@@ -31,15 +31,15 @@ class Stack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hack-dance/stack/releases/download/v0.1.1/stack_0.1.1_linux_amd64.tar.gz"
-      sha256 "be31420a37a0fa39146f387e5abd5326a24204cbfce45ae60fb99e34d273b186"
+      url "https://github.com/hack-dance/stack/releases/download/v0.1.2/stack_0.1.2_linux_amd64.tar.gz"
+      sha256 "c9084e6da9880b5282f5c1c532a65bc76788de5f6fe92e7e229827800ea460bc"
       define_method(:install) do
         bin.install "stack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hack-dance/stack/releases/download/v0.1.1/stack_0.1.1_linux_arm64.tar.gz"
-      sha256 "81189fedfeecc3e17c0e150184afefc54aee127d451df63ecb2d33f499aeb0f6"
+      url "https://github.com/hack-dance/stack/releases/download/v0.1.2/stack_0.1.2_linux_arm64.tar.gz"
+      sha256 "5ec313187fa05af7a0e5e0d616e0ecac0cd8511935136f39ecc954a160fb55ed"
       define_method(:install) do
         bin.install "stack"
       end
