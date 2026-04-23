@@ -1,22 +1,22 @@
 class Hack < Formula
   desc "Environment orchestration for software projects"
   homepage "https://github.com/hack-dance/hack"
-  version "2.5.1"
+  version "3.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hack-dance/hack/releases/download/v2.5.1/hack-2.5.1-darwin-arm64.tar.gz"
-      sha256 "009b47c42abd1750fee6549ac3dba4d143f975440ec5000cfd1ff54092b81a38"
+      url "https://github.com/hack-dance/hack/releases/download/v3.0.0/hack-3.0.0-darwin-arm64.tar.gz"
+      sha256 "a12469420c6fc43f517c8e2bbe2662c3be91e1bd0b199f95c1ec83bf2655d1c6"
     else
-      url "https://github.com/hack-dance/hack/releases/download/v2.5.1/hack-2.5.1-darwin-x86_64.tar.gz"
-      sha256 "c5e8f1a7d639c6b9c27b5a7aba8074bbe2068d9356a72e301c53f95372758a6f"
+      url "https://github.com/hack-dance/hack/releases/download/v3.0.0/hack-3.0.0-darwin-x86_64.tar.gz"
+      sha256 "194ca922b3e2af4bcda3daaf10932493a4b6a98303ca51f5426aeb3ff9fce0f7"
     end
   end
 
   on_linux do
-    url "https://github.com/hack-dance/hack/releases/download/v2.5.1/hack-2.5.1-linux-x86_64.tar.gz"
-    sha256 "8f75658e7bfa32f520a8b235198f7cdd6946fc849ff290f5c11bf18bd62a9a6c"
+    url "https://github.com/hack-dance/hack/releases/download/v3.0.0/hack-3.0.0-linux-x86_64.tar.gz"
+    sha256 "b2395aab701587ba496447dce99a1a50a44412f51f35b509338ec037738df5da"
   end
 
   def install
