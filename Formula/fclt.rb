@@ -1,22 +1,22 @@
 class Fclt < Formula
   desc "Build and evolve AI faculties across tools, users, and projects"
   homepage "https://github.com/hack-dance/fclt"
-  version "2.7.3"
+  version "2.7.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hack-dance/fclt/releases/download/v2.7.3/fclt-2.7.3-darwin-arm64"
-      sha256 "ce0dfb39a065a410ade147038409c1e21ca42532189b8e8dab7e9ad07dce34c7"
+      url "https://github.com/hack-dance/fclt/releases/download/v2.7.4/fclt-2.7.4-darwin-arm64"
+      sha256 "33b75caf7ccc2791d5adc2e7d10f8520e375fc4e115db886c77729493cd3e386"
     else
-      url "https://github.com/hack-dance/fclt/releases/download/v2.7.3/fclt-2.7.3-darwin-x64"
-      sha256 "a7b3af5f6ad1427465c8353f47944a1a30347c0cd407b48a3cdc94d2777f87ce"
+      url "https://github.com/hack-dance/fclt/releases/download/v2.7.4/fclt-2.7.4-darwin-x64"
+      sha256 "c63b88261a18b88c90faec650c986934c754dbe013db8f033fe525119c5f8802"
     end
   end
 
   on_linux do
-    url "https://github.com/hack-dance/fclt/releases/download/v2.7.3/fclt-2.7.3-linux-x64"
-    sha256 "4447852e6e24d2898efe3dc5399089fdc44e8abf165466b1cd39000fa721d539"
+    url "https://github.com/hack-dance/fclt/releases/download/v2.7.4/fclt-2.7.4-linux-x64"
+    sha256 "36381e40c6b3bcf3e0525e65cb25d4a0b16a734978aa024bd5c947363597149e"
   end
 
   def install
